@@ -1,2 +1,0 @@
-# thisisbeijing
-Full Guide
