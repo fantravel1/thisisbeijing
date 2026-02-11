@@ -75,12 +75,38 @@
     <div class="coming-soon-overlay"></div>
     <div class="coming-soon-content">
       <p class="coming-soon-label">ThisIsBeijing.com</p>
-      <h1 class="coming-soon-title">Coming Soon</h1>
-      <p class="coming-soon-text">We are building something that takes time — a layered, respectful guide to Beijing as lived life. Neighborhood profiles, hutong stories, food ecosystems, daily rituals, and voices from the city. Not rushed. Not performed. Observed with care.</p>
+      <h1 class="coming-soon-title" id="comingSoonTitle">Coming Soon</h1>
+      <p class="coming-soon-text" id="comingSoonText">We are building something that takes time — a layered, respectful guide to Beijing as lived life. Neighborhood profiles, hutong stories, food ecosystems, daily rituals, and voices from the city. Not rushed. Not performed. Observed with care.</p>
       <a href="/" class="coming-soon-back">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
         Back to Homepage
       </a>
+
+      <script>
+        (function() {
+          var sections = {
+            'neighborhoods': { title: 'Neighborhoods', desc: 'In-depth profiles of every Beijing district — from the historic hutong core of Dongcheng to the tech campuses of Haidian. Where to stay, what to expect, and how each neighborhood lives.' },
+            'hutongs': { title: 'Hutong Stories', desc: 'Respectful, layered stories from Beijing\'s historic alleyway neighborhoods. Memory, modernization, and daily life in the lanes that define old Beijing.' },
+            'food': { title: 'Food Culture', desc: 'Beijing\'s food ecosystems explored in depth — street breakfast vendors, dumpling houses, noodle shops, night market skewers, hot pot rituals, and the regional cuisines living inside the capital.' },
+            'winter': { title: 'Winter in Beijing', desc: 'The season that makes Beijing most itself. Photo essays, practical guides, and atmospheric stories from the cold, poetic months of December through February.' },
+            'rituals': { title: 'Daily Rituals', desc: 'The repeatable rhythms that define Beijing life — morning parks, evening walks, tea, chess, tai chi, square dancing, and the quiet patterns of 21 million daily routines.' },
+            'parks': { title: 'Parks &amp; Public Spaces', desc: 'Beijing\'s parks are not scenic backdrops — they are living rooms. Morning exercise, community gatherings, and the culture of shared outdoor space.' },
+            'stories': { title: 'Stories', desc: 'Long-form narratives from the people and places that make Beijing alive. Time-layer storytelling, migration, family life, and the quiet details that define a capital.' },
+            'voices': { title: 'Voices', desc: 'Chinese writers, photographers, and diaspora voices telling Beijing\'s story in their own words. Paid, credited, and protected.' },
+            'collections': { title: 'Collections', desc: 'Curated groupings of Beijing content — thematic journeys through the city\'s food, seasons, neighborhoods, and daily life.' },
+            'layers': { title: 'Time Layers', desc: 'Beijing is not one timeline. Dynastic, revolutionary, Olympic, tech, student, migrant, family, art — the city\'s multiple eras operating simultaneously.' },
+            'start-here': { title: 'Start Here', desc: 'New to Beijing? New to this site? A guided introduction to the capital city, designed for visitors who want to understand before they arrive.' }
+          };
+          var params = new URLSearchParams(window.location.search);
+          var section = params.get('section');
+          if (section && sections[section]) {
+            var data = sections[section];
+            document.getElementById('comingSoonTitle').textContent = data.title;
+            document.getElementById('comingSoonText').innerHTML = data.desc + ' <strong>Coming soon.</strong>';
+            document.title = data.title + ' — Coming Soon | This Is Beijing';
+          }
+        })();
+      </script>
     </div>
   </div>
 

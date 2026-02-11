@@ -1432,6 +1432,21 @@ button:focus:not(:focus-visible) {
   outline: none;
 }
 
+/* --- Image Fallback Backgrounds --- */
+.hero-bg,
+.coming-soon-bg,
+.cta-banner-bg,
+.image-banner {
+  background-color: var(--color-ink);
+}
+
+.intro-image,
+.split-image,
+.neighborhood-card-img,
+.food-card img {
+  background-color: var(--color-warm-bg-alt);
+}
+
 /* --- High contrast mode support --- */
 @media (forced-colors: active) {
   .hero-overlay,

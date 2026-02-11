@@ -36,6 +36,9 @@
   <!-- Styles -->
   <link rel="stylesheet" href="css/style.css">
 
+  <!-- Preload hero image for LCP performance -->
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?auto=format&fit=crop&w=1920&q=80" fetchpriority="high">
+
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏯</text></svg>">
 
@@ -224,7 +227,7 @@
     <a href="#getting-around" class="mobile-link">Getting Around</a>
     <a href="#etiquette" class="mobile-link">Etiquette</a>
     <a href="#faq" class="mobile-link">FAQ</a>
-    <a href="coming-soon.html" class="mobile-link">Start Here</a>
+    <a href="coming-soon.html?section=start-here" class="mobile-link">Start Here</a>
   </div>
 
   <!-- ============================================================
@@ -346,7 +349,7 @@
           <!-- Haidian -->
           <article class="neighborhood-card fade-in">
             <img class="neighborhood-card-img"
-                 src="https://images.unsplash.com/photo-1567001988556-44475a4ee646?auto=format&fit=crop&w=600&q=80"
+                 src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=600&q=80"
                  alt="Tree-lined campus walkway at a Beijing university in Haidian district during autumn"
                  width="600" height="375"
                  loading="lazy">
@@ -363,7 +366,7 @@
           <!-- Fengtai -->
           <article class="neighborhood-card fade-in">
             <img class="neighborhood-card-img"
-                 src="https://images.unsplash.com/photo-1474181628609-4ed1c62afbe7?auto=format&fit=crop&w=600&q=80"
+                 src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=600&q=80"
                  alt="Residential neighborhood park in Beijing with morning exercise groups among trees"
                  width="600" height="375"
                  loading="lazy">
@@ -396,7 +399,7 @@
         </div>
 
         <div class="text-center fade-in" style="margin-top: var(--space-3xl);">
-          <a href="coming-soon.html" class="link-arrow">Explore all Beijing neighborhoods <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          <a href="coming-soon.html?section=neighborhoods" class="link-arrow">Explore all Beijing neighborhoods <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
         </div>
       </div>
     </section>
@@ -439,10 +442,10 @@
             <p>Hutongs are Beijing's historic alleyway neighborhoods — narrow lanes winding between courtyard homes, some dating back centuries. They are among the city's most distinctive and intimate spaces. And yes, some offer guesthouses and courtyard hotels that provide a genuinely special experience of old Beijing.</p>
             <p>But hutongs are first and foremost <strong>homes</strong>. They are living, breathing residential communities where families cook, children play, and neighbors share daily life in close quarters. They are not theme parks. They are not aesthetic backdrops. They are not hidden gems waiting to be discovered.</p>
             <p>Visitors who stay in hutong guesthouses often find a slower, more personal rhythm to their visit. Morning light in a courtyard. The sound of bicycle bells. Conversations between neighbors. But this intimacy comes with a responsibility: you are a guest in someone's home territory. Photograph with permission. Speak at neighborhood volume. Respect the contested space between preservation and modernization that hutong residents navigate every day.</p>
-            <a href="coming-soon.html" class="link-arrow">Explore hutong stories <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            <a href="coming-soon.html?section=hutongs" class="link-arrow">Explore hutong stories <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
           </div>
           <div class="split-image fade-in-right">
-            <img src="https://images.unsplash.com/photo-1590417975155-65109fa4e6e2?auto=format&fit=crop&w=800&q=80"
+            <img src="https://images.unsplash.com/photo-1517935706615-2717063c2225?auto=format&fit=crop&w=800&q=80"
                  alt="Narrow Beijing hutong alleyway with red lanterns, weathered brick walls, and potted plants by doorways"
                  width="800" height="600"
                  loading="lazy">
@@ -495,7 +498,7 @@
         </div>
 
         <div class="text-center fade-in" style="margin-top: var(--space-3xl);">
-          <a href="coming-soon.html" class="link-arrow">Discover Beijing's daily rituals <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          <a href="coming-soon.html?section=rituals" class="link-arrow">Discover Beijing's daily rituals <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
         </div>
       </div>
     </section>
@@ -504,7 +507,7 @@
          IMAGE BANNER — Transition
          ============================================================ -->
     <div class="image-banner" role="img" aria-label="Beijing park in morning mist">
-      <img src="https://images.unsplash.com/photo-1537002838-c3f3e12e9b75?auto=format&fit=crop&w=1920&q=80"
+      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1920&q=80"
            alt="Misty morning scene in a Beijing park with silhouettes of people exercising among trees"
            width="1920" height="600"
            loading="lazy">
@@ -523,7 +526,7 @@
       <div class="container">
         <div class="split-content split-content--reverse">
           <div class="split-image fade-in-left">
-            <img src="https://images.unsplash.com/photo-1577706881850-b1a5b4e01e82?auto=format&fit=crop&w=800&q=80"
+            <img src="https://images.unsplash.com/photo-1533050487297-09b450131914?auto=format&fit=crop&w=800&q=80"
                  alt="Ornate corridor of a Beijing temple with red pillars and painted ceiling extending into the distance"
                  width="800" height="600"
                  loading="lazy">
@@ -552,7 +555,7 @@
             <p>Beijing's winter is dry, sharp, and genuinely cold — temperatures regularly drop to <strong>-5°C to -10°C (14°F to 23°F)</strong> from December through February. The air is crisp. Skies can be brilliantly blue on clear days, or softly gray for stretches. The city takes on a stark, intimate quality that no other season offers.</p>
             <p>Steam rises from street food stalls. People bundle in long coats and scarves. Indoor spaces become warm refuges for <strong>hot pot, tea, and conversation</strong>. Parks grow quieter but not empty — the hardiest tai chi practitioners are there every morning, breath visible in the cold air. The Forbidden City dusted in snow is one of Beijing's most stunning sights.</p>
             <p>Pack layers, a good coat, and expect dry skin. Air quality varies by day — check forecasts and carry a mask for hazy days. But don't skip winter. This is when Beijing feels most itself: quieter, more intimate, and deeply atmospheric. Beijing's seasons and air quality realities are part of what makes it an honest city to visit.</p>
-            <a href="coming-soon.html" class="link-arrow">Explore winter in Beijing <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            <a href="coming-soon.html?section=winter" class="link-arrow">Explore winter in Beijing <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
           </div>
           <div class="split-image fade-in-right">
             <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=800&q=80"
@@ -576,7 +579,7 @@
         </div>
 
         <div class="food-grid">
-          <a href="coming-soon.html" class="food-card fade-in">
+          <a href="coming-soon.html?section=food" class="food-card fade-in">
             <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=600&q=80"
                  alt="Freshly made jianbing savory crepe on a griddle with egg, sauce, and crispy crackers at a Beijing street stall"
                  width="600" height="400"
@@ -587,7 +590,7 @@
             </div>
           </a>
 
-          <a href="coming-soon.html" class="food-card fade-in">
+          <a href="coming-soon.html?section=food" class="food-card fade-in">
             <img src="https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=600&q=80"
                  alt="Handmade Chinese dumplings arranged on a bamboo steamer with dipping sauce"
                  width="600" height="400"
@@ -598,7 +601,7 @@
             </div>
           </a>
 
-          <a href="coming-soon.html" class="food-card fade-in">
+          <a href="coming-soon.html?section=food" class="food-card fade-in">
             <img src="https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=600&q=80"
                  alt="Hand-pulled noodles being stretched in a traditional Beijing noodle house kitchen"
                  width="600" height="400"
@@ -609,7 +612,7 @@
             </div>
           </a>
 
-          <a href="coming-soon.html" class="food-card fade-in">
+          <a href="coming-soon.html?section=food" class="food-card fade-in">
             <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80"
                  alt="Sizzling lamb skewers on a charcoal grill at a Beijing late-night food stall"
                  width="600" height="400"
@@ -620,7 +623,7 @@
             </div>
           </a>
 
-          <a href="coming-soon.html" class="food-card fade-in">
+          <a href="coming-soon.html?section=food" class="food-card fade-in">
             <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=600&q=80"
                  alt="Bubbling hot pot with rich broth and various ingredients arranged around the table"
                  width="600" height="400"
@@ -631,8 +634,8 @@
             </div>
           </a>
 
-          <a href="coming-soon.html" class="food-card fade-in">
-            <img src="https://images.unsplash.com/photo-1544006659-f0b21884ce1f?auto=format&fit=crop&w=600&q=80"
+          <a href="coming-soon.html?section=food" class="food-card fade-in">
+            <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=600&q=80"
                  alt="Traditional Chinese tea ceremony with clay teapot and small cups on a wooden tray"
                  width="600" height="400"
                  loading="lazy">
@@ -644,7 +647,7 @@
         </div>
 
         <div class="text-center fade-in" style="margin-top: var(--space-3xl);">
-          <a href="coming-soon.html" class="link-arrow">Discover Beijing food culture <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          <a href="coming-soon.html?section=food" class="link-arrow">Discover Beijing food culture <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
         </div>
       </div>
     </section>
@@ -738,7 +741,7 @@
             <p>The respectful approach is to <strong>participate quietly rather than document loudly</strong>. You are not discovering anything hidden. You are joining something already in progress. Beijing is not overwhelming for visitors who approach it this way. It is, instead, deeply generous.</p>
           </div>
           <div class="split-image fade-in-right">
-            <img src="https://images.unsplash.com/photo-1529921879010-1d127a9e4c28?auto=format&fit=crop&w=800&q=80"
+            <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=800&q=80"
                  alt="Elderly Beijing residents playing traditional Chinese chess in a public park under dappled sunlight"
                  width="800" height="600"
                  loading="lazy">
@@ -896,7 +899,7 @@
       <div class="container cta-content">
         <h2 id="cta-heading">Beijing, As Lived</h2>
         <p>Not a tourist guide. Not geopolitics. Not interpretation. Just a city, observed with care. Stories, neighborhoods, food, and daily life — coming soon.</p>
-        <a href="coming-soon.html" class="cta-btn">Start Here <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a href="coming-soon.html?section=start-here" class="cta-btn">Start Here <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
       </div>
     </section>
 
@@ -931,18 +934,18 @@
             <li><a href="#etiquette">Etiquette</a></li>
             <li><a href="#planning">Planning Your Trip</a></li>
             <li><a href="#faq">FAQ</a></li>
-            <li><a href="coming-soon.html">Start Here</a></li>
+            <li><a href="coming-soon.html?section=start-here">Start Here</a></li>
           </ul>
         </div>
 
         <div class="footer-column">
           <h4>Coming Soon</h4>
           <ul>
-            <li><a href="coming-soon.html">Layers</a></li>
-            <li><a href="coming-soon.html">Parks &amp; Spaces</a></li>
-            <li><a href="coming-soon.html">Stories</a></li>
-            <li><a href="coming-soon.html">Voices</a></li>
-            <li><a href="coming-soon.html">Collections</a></li>
+            <li><a href="coming-soon.html?section=layers">Layers</a></li>
+            <li><a href="coming-soon.html?section=parks">Parks &amp; Spaces</a></li>
+            <li><a href="coming-soon.html?section=stories">Stories</a></li>
+            <li><a href="coming-soon.html?section=voices">Voices</a></li>
+            <li><a href="coming-soon.html?section=collections">Collections</a></li>
           </ul>
         </div>
       </div>
